@@ -4,11 +4,51 @@
 body {
   background-color: #243841;
 }
+h4 {
+  margin-top: 15px;
+  padding-top: 20px;
 
-ul {
-  display: flex;
+}
+.cocktails-container{
+  margin-top: 30px;
+}
+.cocktails-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
 }
 
-.form {
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .cocktails-container {
+    grid-template-columns: 1fr;
+  }
+}
 
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .cocktails-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .cocktails-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .cocktails-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .cocktails-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }

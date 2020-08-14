@@ -23,3 +23,13 @@ $border-radius-lg: 2px;
 $border-radius-sm: 2px;
 
 // Override other variables below!
+
+.carousel .item {
+  height: 150px;
+}
+
+.item img {
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
