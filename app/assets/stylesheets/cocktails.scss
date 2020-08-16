@@ -4,14 +4,25 @@
 body {
   background-color: #243841;
 }
-h4 {
-  margin-top: 15px;
-  padding-top: 20px;
 
+
+// Carousel
+
+#first-carousel{
+ margin-top: 40px;
+ margin-bottom: 15px;
 }
-.cocktails-container{
+
+.carousel-inner{
+  height: 400px;
+}
+
+// Cocktails-grid
+
+.cocktails-container {
   margin-top: 30px;
 }
+
 .cocktails-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -51,4 +62,26 @@ h4 {
   .cocktails-container {
     grid-template-columns: 1fr 1fr 1fr;
   }
+}
+
+// show
+.cocktail-indiv h4{
+  padding-bottom: 15px;
+}
+.cocktail-indiv {
+  color: #ffffff;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cocktail-indiv-form{
+  color: #FFFFFF;
+  margin: 20px;
+}
+
+.home-btn {
+  margin: 20px;
 }

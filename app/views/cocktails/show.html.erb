@@ -15,8 +15,34 @@
     </div>
   </nav>
 
-<div>
+<div class=cocktail-indiv>
+  <div class='cocktail-info'>
   <h4> The <%= @cocktail.name %></h4>
- <img src="" alt="">
-    <%= link_to 'Our Cocktails', cocktails_path(@cocktails), class: "btn btn-ghost" %>
+    <%= cl_image_tag @cocktail.photo.key, width: 400, height: 300, crop: :fill %>
+  </div>
+  <div class='cocktail-btns'>
+   <!--  <%#= link_to 'Add an ingredient' doses_path(@dose), class: "btn btn-ghost" %> -->
+   <!--  <#%= link_to "Delete this cocktail ", cocktails_path(@cocktail)
+      method: :delete
+      data: {confirm: "Are you sure?"}, class: "btn btn-ghost" %> -->
+  </div>
+
 </div>
+
+<div class='cocktail-indiv-form'>
+  <div class= 'form'>
+    <%= simple_form_for @cocktail do |c| %>
+      <%= c.input :name %>
+      <%= c.input :photo, as: :file  %>
+       <h4><%= c.button :submit, class: "btn btn-ghost"%></h4>
+    <% end %>
+  </div>
+</div>
+
+<div class='home-btn'>
+ <%= link_to 'Our Cocktails', cocktails_path(@cocktails), class: "btn btn-ghost" %>
+</div>
+
+
+
+

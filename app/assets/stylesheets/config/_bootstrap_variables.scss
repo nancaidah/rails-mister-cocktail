@@ -18,18 +18,18 @@ $danger:     $red;
 $warning:    $orange;
 
 // Buttons & inputs' radius
-$border-radius:    2px;
-$border-radius-lg: 2px;
-$border-radius-sm: 2px;
+$border-radius:    4px;
+$border-radius-lg: 4px;
+$border-radius-sm: 4px;
 
 // Override other variables below!
 
-.carousel .item {
-  height: 150px;
-}
 
-.item img {
-    position: absolute;
-    top: 5px;
-    left: 0;
-}
+//  Carousel
+
+$carousel-caption-width:             100%;
+$carousel-caption-padding-y:         1.25rem;
+$carousel-caption-spacer:            2rem;
+
+$carousel-transition-duration:       .5s;
+$carousel-transition:                transform $carousel-transition-duration ease-in-out; // Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)
